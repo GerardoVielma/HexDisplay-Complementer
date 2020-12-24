@@ -83,56 +83,56 @@ module Display_Digit (
            AN = ~(8'b00000000);  //All off, set cathodes  
            Segments = Cath [0];
            end
-           4'h1:AN = ~(8'b00000001);  //Display first indicator on R  
+	   4'h1:AN = ~(8'b00000001);  //Display 1st indicator on R  
                      
            4'h2:
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [1];
            end
-           4'h3:AN = ~(8'b00000010);  //Display 2nd indicator on R
+           4'h3:AN = ~(8'b00000010);  
            
            4'h4:
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [2];
            end
-           4'h5:AN = ~(8'b00000100);  //Display 3rd indicator on R
+           4'h5:AN = ~(8'b00000100);  
            
            4'h6:
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [3];
            end
-           4'h7:AN = ~(8'b00001000);  //Display 4th indicator on R
+           4'h7:AN = ~(8'b00001000);  
            
            4'h8:
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [4];
            end
-           4'h9:AN = ~(8'b00010000);  //Display 5th indicator on R
+           4'h9:AN = ~(8'b00010000);  
            
            4'hA:
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [5];
            end
-           4'hB:AN = ~(8'b00100000);  //Display 3rd indicator on R
+           4'hB:AN = ~(8'b00100000);  
            
            4'hC:
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [6];
            end
-           4'hD:AN = ~(8'b01000000);  //Display 3rd indicator on R
+           4'hD:AN = ~(8'b01000000);  
            
            4'hE: 
            begin
-           AN = ~(8'b00000000);   //All off set next cath
+           AN = ~(8'b00000000);   
            Segments = Cath [7];
            end
-           4'hF:AN = ~(8'b10000000);  //Display 3rd indicator on R                                                                             
+           4'hF:AN = ~(8'b10000000);                                                                              
            
            default:AN = ~(8'b00000000);   
            endcase 
